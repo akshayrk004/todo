@@ -1,47 +1,29 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <!-- <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    /> -->
-    <title>TODO</title>
-  </head>
-  <body>
-    <div
-      class="bg-stone-900 text-gray-300 min-h-screen flex flex-col items-center pt-24 border"
-    >
-      <form>
-        <input
-          type="text"
-          placeholder="Enter a task"
-          id="input"
-          class="border-none outline-none bg-gray-700 px-6 py-2 rounded-md w-96"
-        />
-        <button
-          id="btn"
-          class="bg-cyan-500 px-6 py-2 text-black font-bold rounded-md"
-        >
-          Add task
-        </button>
-      </form>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <title>to-do list</title>
+</head>
+<body>
+    <div class="bg-stone-900 text-gray-300 min-h-screen flex flex-col items-center pt-24 border">
+        <div class="w-full flex flex-col items-center mt-10"></div>
+        <form action="">
+            <input id="input" type="text" placeholder="Enter a task..." class="border-none outline-none bg-gray-700 px-6 py-2 rounded-md w-60 md:w-96 font-serif text-lg">
+            <button id="btn"
+            type="submit" class="bg-cyan-500  hover:bg-cyan-600 px-6 py-2 text-white rounded-md font-serif">Add Task</button>
+        </form>
+        <div class="w-full max-w-[460px] mt-12 px-4 mx-auto">
+            <h1 class="text-2xl font-bold text-blue-500 pb-4 flex  text-center sm:text-left">Task List</h1>
+            <ul id="ul" class="flex flex-col gap-2">
+               
 
-      <div class="w-120 mt-12">
-        <h1 class="text-2xl font bold text-blue-500 pb-4 flex">Task List</h1>
-      </div>
-
-
-      <ul id="ul">
-        <button></button>
-      </ul>
+            </ul>
+        </div>
     </div>
-
-    <script src="script.js"></script>
-  </body>
+     <script src="script.js"></script>
+</body>
 </html>
